@@ -1,7 +1,6 @@
-# bitstreamapp
+# Exploration of EmberJS + Embroider + Vite + TypeScript + TailwindCSS
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+The mission to peep into the future and capabilities to come.
 
 ## Prerequisites
 
