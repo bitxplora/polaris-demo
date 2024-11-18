@@ -19,12 +19,18 @@ const Login: TOC<LoginSignature> =  <template>
               <label class="text-sm font-sans tracking-normal text-purple-950 font-medium py-1" for="password">Password</label>
               <input class="w-64 h-8 rounded pl-2 border border-purple-800" type="password" id="password" name="password" required>
             </div>
-            <button class="w-16 text-purple-200 font-semibold font-serif p-1 bg-purple-600 shadow rounded" type="submit" form="signform">Log In</button>
-          </form>
+            <div class="grid content-between gap-y-9">
+              <ul class="flex justify-between text-xs text-orange-950 font-bold font-mono">
+                <li>Sign up</li>
+                <li>Forget password</li>
+              </ul>
+                <button class="justify-self-end w-16 text-purple-200 font-bold font-serif p-1 bg-purple-600 shadow rounded" type="submit" form="signform">Log In</button>
+              </div>
+            </form>
+          </div>
         </div>
+
       </div>
+    </template>;
 
-    </div>
-  </template>;
-
-export default Login;
+  export default Login;
