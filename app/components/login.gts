@@ -19,7 +19,7 @@ const Login: TOC<LoginSignature> =  <template>
               <label class="text-sm font-sans tracking-normal text-purple-950 font-medium py-1" for="password">Password</label>
               <input class="w-64 h-8 rounded pl-2 border border-purple-800" type="password" id="password" name="password" required>
             </div>
-            <button class="w-16 text-purple-200 font-semibold font-serif p-1 bg-purple-600 shadow rounded" type="submit" id="signform">Log In</button>
+            <button class="w-16 text-purple-200 font-semibold font-serif p-1 bg-purple-600 shadow rounded" type="submit" form="signform">Log In</button>
           </form>
         </div>
       </div>
