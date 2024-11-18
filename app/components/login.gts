@@ -9,7 +9,7 @@ const Login: TOC<LoginSignature> =  <template>
       <div class='bg-purple-600 w-full h-full grid justify-center place-items-center overflow-auto'>
         <div class='bg-purple-200 w-80 h-fit p-6 m-8 gap-y-16 rounded-md grid justify-center justify-items-center'>
           <img class='h-14 w-62 relative shadow-sm' src="/images/bitstream-logo.svg" alt="The brand of Bitstream Limited">
-          {{!<h1 class="text-2xl">Welcome</h1>}}
+          <div class="hidden"></div>   {{! This div is used to make vertical on big viewport }}
           <form id='signform' class='grid justify-center gap-y-4'>
             <div class='grid justify-center'>
               <label class="text-sm font-sans tracking-normal text-purple-950 font-medium py-1" for="username">Email</label>
