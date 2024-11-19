@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'login-pattern': "url('/images/login-pattern.svg')",
+        'japanese-pattern': "url('/images/japanese-pattern.svg')",
       },
     },
   },
