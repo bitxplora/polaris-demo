@@ -1,4 +1,4 @@
-# Exploration of EmberJS + Embroider + Vite + TypeScript + TailwindCSS
+# Exploration of EmberJS + Embroider + Vite + TypeScript + TailwindCSS tittled PolarisX
 
 The mission to peep into the future and capabilities to come.
 
