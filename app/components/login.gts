@@ -1,4 +1,5 @@
 import type { TOC } from '@ember/component/template-only';
+import Password from 'bitstreamapp/components/password';
 
 interface LoginSignature {
   Element: HTMLDivElement;
@@ -16,15 +17,14 @@ const Login: TOC<LoginSignature> =  <template>
               <input class="w-64 h-8 rounded pl-2 text-sm border border-purple-950 sm:w-80" type="text" id="username" name="username" placeholder="tosin@example.com" required>
             </div>
             <div class='grid justify-center'>
-              <label class="text-xs font-sans tracking-wide text-purple-950 font-medium py-1" for="password">Password</label>
-              <input class="w-64 h-8 rounded pl-2 border border-purple-950 sm:w-80" type="password" id="password" name="password" required>
+              <Password />
             </div>
             <div class="grid content-between gap-y-9">
+              <button class="justify-self-end w-24 text-purple-200 font-bold font-serif p-4 bg-purple-900 shadow rounded" type="submit" form="signform">Login</button>
               <ul class="grid text-sm text-blue-800 font-bold font-mono tracking-tight gap-y-2">
                 <li>Forgot password?</li>
                 <li><span class="text-sm text-purple-800 font-serif font-black">New to <span class="tracking-widest">Bitstream</span>? </span>Sign up</li>
               </ul>
-                <button class="justify-self-end w-24 text-purple-200 font-bold font-serif p-4 bg-purple-900 shadow rounded" type="submit" form="signform">Login</button>
               </div>
             </form>
           </div>
