@@ -1,11 +1,23 @@
-import type { TOC } from '@ember/component/template-only';
+import Component from '@glimmer/component';
+import { tracked } from '@glimmer/tracking';
+import { on } from '@ember/modifier';
+// import type { TOC } from '@ember/component/template-only';
 import Password from 'bitstreamapp/components/password';
 
 interface LoginSignature {
   Element: HTMLDivElement;
 }
 
-const Login: TOC<LoginSignature> =  <template>
+export default class Login extends Component<LoginSignature> {
+  @tracked login = false;
+
+  doLogin = (event: MouseEvent) =>  {
+    event.preventDefault;
+    this.login = !this.login;
+    return false;
+  }
+
+  <template>
     <div class='w-screen h-screen bg-japanese-pattern'>
       <div class='bg-transparent w-full h-full grid justify-center place-items-center overflow-auto'>
         <div class='bg-purple-100 w-80 h-fit p-6 m-8 gap-y-16 rounded-md grid justify-center justify-items-center sm:w-96'>
@@ -18,19 +30,24 @@ const Login: TOC<LoginSignature> =  <template>
             </div>
             <div class='grid justify-center'>
               <Password />
+              {{#if this.login }}
+                <p class="text-orange-900 font-bold text-sm">Incorrect login details</p>
+              {{/if}}
             </div>
             <div class="grid content-between gap-y-9">
-              <button class="justify-self-end w-24 text-purple-200 font-bold font-serif p-4 bg-purple-900 shadow rounded" type="submit" form="signform">Login</button>
+              <button class="justify-self-end w-24 text-purple-200 font-bold font-serif p-4 bg-purple-900 shadow rounded" type="button" form="signform"
+                {{ on "click" this.doLogin }}
+              >
+                Login
+              </button>
               <ul class="grid text-sm text-blue-800 font-bold font-mono tracking-tight gap-y-2">
                 <li>Forgot password?</li>
                 <li><span class="text-sm text-purple-800 font-serif font-black">New to <span class="tracking-widest">Bitstream</span>? </span>Sign up</li>
               </ul>
-              </div>
-            </form>
-          </div>
+            </div>
+          </form>
         </div>
-
       </div>
-    </template>;
-
-  export default Login;
+    </div>
+  </template>;
+}
