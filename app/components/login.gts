@@ -12,7 +12,7 @@ const Login: TOC<LoginSignature> =  <template>
           <h1 class="text-2xl font-medium font-serif tracking-widest text-purple-950 antialiased">Login to <span class="tracking-wide">Bitstream</span></h1>
           <form id='signform' class='grid justify-center gap-y-4'>
             <div class='grid justify-center'>
-              <label class="text-sm font-sans tracking-wide text-purple-950 font-medium py-1" for="username">Username</label>
+              <label class="text-xs font-sans tracking-wide text-purple-950 font-medium py-1" for="username">Username</label>
               <input class="w-64 h-8 rounded pl-2 text-sm border border-purple-950 sm:w-80" type="text" id="username" name="username" placeholder="tosin@example.com" required>
             </div>
             <div class='grid justify-center'>
@@ -24,7 +24,7 @@ const Login: TOC<LoginSignature> =  <template>
                 <li>Forgot password?</li>
                 <li><span class="text-sm text-purple-800 font-serif font-black">New to <span class="tracking-widest">Bitstream</span>? </span>Sign up</li>
               </ul>
-                <button class="justify-self-end w-24 text-purple-200 font-bold font-serif p-4 bg-purple-900 shadow rounded" type="submit" form="signform">Log In</button>
+                <button class="justify-self-end w-24 text-purple-200 font-bold font-serif p-4 bg-purple-900 shadow rounded" type="submit" form="signform">Login</button>
               </div>
             </form>
           </div>
