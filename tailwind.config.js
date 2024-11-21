@@ -6,6 +6,9 @@ export default {
       backgroundImage: {
         'japanese-pattern': "url('/images/japanese-pattern.svg')",
       },
+      fontFamily: {
+        'bodoni': [ '"Bodoni"', 'sans-serif' ]
+      }
     },
   },
   plugins: [],
