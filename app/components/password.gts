@@ -3,7 +3,6 @@ import { tracked } from '@glimmer/tracking';
 import { on } from '@ember/modifier';
 
 export interface PasswordSignature {
-  // The element to which `...attributes` is applied in the component template
   Element: HTMLDivElement;
 }
 
