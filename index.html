@@ -2,31 +2,35 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>AppTemplate</title>
+    <title>Bitstream Agency Banking</title>
     <meta name="description" content="Ember Polaris Xperiment">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     {{content-for "head"}}
 
-    <link integrity="" rel="stylesheet" href="/@embroider/virtual/vendor.css">
-    <link integrity="" rel="stylesheet" href="/assets/bitstreamapp.css">
-    <link rel="icon" href="images/favicon.ico" sizes="32x32">
-    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
-    <link href="https://fonts.cdnfonts.com/css/bodoni" rel="stylesheet">
+		<link integrity="" rel="stylesheet" href="/@embroider/virtual/vendor.css">
+		<link integrity="" rel="stylesheet" href="/assets/bitstreamapp.css">
 
-    {{content-for "head-footer"}}
-  </head>
-  <body>
-    {{content-for "body"}}
+		<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+		<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+		<link rel="shortcut icon" href="/images/favicon.ico">
+		<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+		<link rel="manifest" href="/images/site.webmanifest">
+		<link href="https://fonts.cdnfonts.com/css/bodoni" rel="stylesheet">
 
-    <script src="/@embroider/virtual/vendor.js"></script>
-    <script type="module">
-      import Application from './app/app';
-      import environment from './app/config/environment';
+		{{content-for "head-footer"}}
+	</head>
+	<body>
+		{{content-for "body"}}
 
-      Application.create(environment.APP);
-    </script>
+		<script src="/@embroider/virtual/vendor.js"></script>
+		<script type="module">
+			import Application from './app/app';
+			import environment from './app/config/environment';
 
-    {{content-for "body-footer"}}
-  </body>
+			Application.create(environment.APP);
+		</script>
+
+		{{content-for "body-footer"}}
+	</body>
 </html>
