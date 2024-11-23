@@ -54,8 +54,9 @@ export default class Login extends Component<LoginSignature> {
             </div>
             <div class="grid justify-center">
               <Password />
-              {{#if this.login}}
-                <p class="text-orange-900 font-bold text-sm">
+              {{#if this.login }}
+                <p class="text-orange-900 font-bold text-sm"
+                >
                   Incorrect login details
                 </p>
               {{/if}}
