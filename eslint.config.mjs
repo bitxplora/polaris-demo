@@ -138,7 +138,7 @@ export default ts.config(
    * Settings
    */
   {
-    ignores: ['dist/', 'node_modules/', 'coverage/', '!**/.*'],
+    ignores: ['**/tests/**/*', 'dist/', 'node_modules/', 'coverage/', '!**/.*'],
     linterOptions: {
       reportUnusedDisableDirectives: 'error',
     },

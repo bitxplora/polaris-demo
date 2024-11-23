@@ -10,6 +10,5 @@ export default Route(
     {{outlet}}
 
     <Login />
-
   </template>
 );

@@ -54,27 +54,35 @@ export default class Login extends Component<LoginSignature> {
             </div>
             <div class="grid justify-center">
               <Password />
-              {{#if this.login }}
-                <p class="text-orange-900 font-bold text-sm"
-                >
+              {{#if this.login}}
+                <p class="text-orange-900 font-bold text-sm">
                   Incorrect login details
                 </p>
               {{/if}}
             </div>
             <div class="grid content-between gap-y-9">
-              <button class="justify-self-end w-24 text-purple-200 font-bold font-serif p-4 bg-purple-900 shadow rounded"
-                type="button" form="signform" {{ on "click" this.doLogin }}
+              <button
+                class="justify-self-end w-24 text-purple-200 font-bold font-serif p-4 bg-purple-900 shadow rounded"
+                type="button"
+                form="signform"
+                {{on "click" this.doLogin}}
               >
                 Login
               </button>
-              <ul class="grid text-sm text-blue-800 font-bold font-mono tracking-tight gap-y-2">
+              <ul
+                class="grid text-sm text-blue-800 font-bold font-mono tracking-tight gap-y-2"
+              >
                 <li>Forgot password?</li>
-                <li><span class="text-sm text-purple-950 font-serif font-black">New to <span class="tracking-widest">Bitstream</span>? </span>Sign up</li>
+                <li><span
+                    class="text-sm text-purple-950 font-serif font-black"
+                  >New to
+                    <span class="tracking-widest">Bitstream</span>?
+                  </span>Sign up</li>
               </ul>
             </div>
           </form>
         </div>
       </div>
     </div>
-  </template>;
+  </template>
 }
