@@ -1,14 +1,14 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [ `app/**/*.{js,ts,hbs,gjs,gts,html}` ],
+  content: [`app/**/*.{js,ts,hbs,gjs,gts,html}`],
   theme: {
     extend: {
       backgroundImage: {
         'japanese-pattern': "url('/images/japanese-pattern.svg')",
       },
       fontFamily: {
-        'bodoni': [ '"Bodoni"', 'sans-serif' ]
-      }
+        bodoni: ['Bodoni', 'sans-serif'],
+      },
     },
   },
   plugins: [],

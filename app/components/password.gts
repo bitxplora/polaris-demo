@@ -9,7 +9,7 @@ export interface PasswordSignature {
 export default class Password extends Component<PasswordSignature> {
   @tracked eyeToggled = false;
 
-  toggleEye = () => this.eyeToggled = !this.eyeToggled;
+  toggleEye = (): boolean => this.eyeToggled = !this.eyeToggled;
 
   <template>
     <label class="text-xs font-sans tracking-wide text-purple-950 font-medium py-0.5" for="password">Password</label>

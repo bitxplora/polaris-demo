@@ -3,10 +3,10 @@
 module.exports = {
   extends: ['stylelint-config-standard', 'stylelint-prettier/recommended'],
   rules: {
-    "at-rule-no-unknown": [
+    'at-rule-no-unknown': [
       true,
       {
-        "ignoreAtRules": [
+        ignoreAtRules: [
           'tailwind',
           'apply',
           'responsive',
